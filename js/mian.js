@@ -15,7 +15,6 @@ document.getElementById("tips").src = "./img/ArabicTips.png";
 document.getElementById("section3H1").innerHTML =
   "نصيحة <span>مبرمج</span>  عربى للدخول لمجال البرمجة";
 document.getElementById("section3P");
-document.getElementById("title").innerHTML = "من نحن";
 document.getElementById("title1").innerHTML = "نصائح هامة";
 
 function myFunction() {
@@ -36,7 +35,6 @@ function myFunction() {
       "Advice for an Arab <span>Programmer</span> to enter the programming field";
     section3P.innerHTML =
       "At the beginning of your learning in the field of programming, you must get to know the computer and its mechanism, how it works, how to receive commands and how to implement them in order to enter the field while you are familiar with the computer. An idea of ​​how the computer works in a simple, smooth and sound way and we direct you to listen to the course";
-      title.innerHTML = "About";
       title1.innerHTML = "Important Tips";
   } else {
     logo.innerHTML = "نصيحة مبرمج";
@@ -53,7 +51,6 @@ function myFunction() {
       "نصيحة <span>مبرمج</span>  عربى للدخول لمجال البرمجة";
     section3P.innerHTML =
       "فى بداية تعلمك لمجال البرمجة يجب عليك أن تتعرف على الحاسب الالى و ألية عمله وطريقة تشغيلة وازاي بياخد الأوامر و ازاى بينفذها لكي تدخل المجال وانت ملم بفكر كيفية عمل الحاسب الالى وبطريقة مبسطة وسلسة وسليمة ونرشدك على أن تستمع إللى كورس";
-      title.innerHTML = "من نحن";
       title1.innerHTML = "نصائح هامة";
   }
 }
