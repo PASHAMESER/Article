@@ -106,20 +106,27 @@ header a {
 .box .section {
   position: relative;
   overflow: hidden;
-  height: 350px;
+  height: 550px;
   width: 300px;
 }
 
 .box .section img {
   position: relative;
-  height: 100%;
   width: 100%;
-  transition: 0.5s;
+  animation: up-and-down 3s linear infinite;
 }
 
-.box .section img:hover {
-  transform: scale(1.3) rotate(5deg);
+/* Start Animation */
+@keyframes up-and-down {
+  0%, 100% {
+    top: 0;
+  }
+  50% {
+    top: 50px;
+  }
 }
+/* End Animation */
+
 
 .box .section1 {
   width: 500px;
@@ -200,7 +207,10 @@ header a {
     width: 300px;
   }
 
-  .box .section1 {
+  .box .section {
+    width: 300px;
+  }
+  .box .section1 {    
     width: 300px;
   }
 
@@ -275,6 +285,18 @@ header a {
 }
 
 /* lg */
+@media (min-width:993px) and (max-width:1199px) {
+  .box .section {
+    width: 400px;
+  }
+}
+
+/* Xlg */
+@media (min-width:1200px) and (max-width: 1399px) {
+  .box .section {
+    width: 400px;
+  }
+}
 
 /* End Media */
 
