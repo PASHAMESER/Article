@@ -35,13 +35,33 @@ body {
   /* font-family: "Poppins", sans-serif; */
 }
 
+/* Start Up To Top */
+.UP-TO-TOP {
+  position: fixed;
+  bottom: 80px;
+  right: -50px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.UP-TO-TOP img {
+  width: 50px;
+  height: 50px;
+}
+
+.show{
+  right: 20px;
+  transition: 0.6s;
+  z-index: 1000;
+}
+/* Start Up To Top */
+
 header {
   height: 110px;
   background-color: rgba(0, 0, 0, 0.4);
   display: flex;
   align-items: center;
   justify-content: space-around;
-  user-select: none;
 }
 
 header img {
@@ -62,7 +82,8 @@ header a {
 .soraAndlogo {
   display: flex;
   align-items: center;
-  background-color: rgb(64 64 64);  
+  background-color: rgb(64 64 64);
+  ;
   border-radius: 50px;
 }
 
@@ -114,7 +135,6 @@ header a {
   position: relative;
   width: 100%;
   animation: up-and-down 3s linear infinite;
-  user-select: none;
 }
 
 /* Start Animation */
@@ -164,7 +184,6 @@ header a {
   position: relative;
   z-index: 1000;
   margin-top: 25px;
-  user-select: none;
 }
 
 .box .section1 .btn, .btn1 {
@@ -318,7 +337,6 @@ header a {
 
 .box1 .section2 img {
   width: 100%;
-  user-select: none;
 }
 
 .box1 .section3 {
@@ -329,7 +347,6 @@ header a {
 .box1 .section3 h1 {
   color: white;
   font-size: 24px;
-  user-select: none;
 }
 
 .box1 .section3 span {
@@ -341,7 +358,6 @@ header a {
   font-size: 17px;
   line-height: 1.7;
   font-weight: bold;
-  user-select: none;
 }
 
 /* media Box1 */
@@ -397,13 +413,16 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  user-select: none;
 }
 
 footer span {
   position: relative;
   color: white;
   font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+}
+footer span span {
+  color: #ffb620;
 }
 
 /* End footer*/
