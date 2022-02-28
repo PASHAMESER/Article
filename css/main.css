@@ -202,8 +202,8 @@ header a {
 }
 
 .box .section1 .btn1 {
-  background-color: white;
-  color: #000;
+  background-color: rgba(250, 250, 250, 0.1);
+  color: white;
 }
 
 .box .section1 .btn:hover {
@@ -357,6 +357,14 @@ header a {
   color: white;
   font-size: 17px;
   line-height: 1.7;
+  font-weight: bold;
+}
+.box1 .section3 a{
+  color: #ffb620;
+  padding: 7px 10px;
+  background-color: rgba(250, 250, 250, 0.1);
+  line-height: 3;
+  font-family: 'Roboto';
   font-weight: bold;
 }
 

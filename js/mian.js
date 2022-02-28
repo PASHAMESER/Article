@@ -2,7 +2,9 @@
 let UPTOTOP = document.querySelector(".UP-TO-TOP");
 
 window.onscroll = function () {
-  this.scrollY >= 500 ? UPTOTOP.classList.add("show") : UPTOTOP.classList.remove("show");
+  this.scrollY >= 500
+    ? UPTOTOP.classList.add("show")
+    : UPTOTOP.classList.remove("show");
 };
 
 UPTOTOP.onclick = function () {
@@ -13,6 +15,7 @@ UPTOTOP.onclick = function () {
 };
 // End Up To Top
 
+// Start language
 document.getElementById("language").onclick = myFunction;
 document.getElementById("language").innerHTML = "En";
 document.getElementById("logo").innerHTML = "نصيحة مبرمج";
@@ -69,4 +72,4 @@ function myFunction() {
     title1.innerHTML = "نصائح هامة";
   }
 }
-
+// End language
