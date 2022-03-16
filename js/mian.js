@@ -1,18 +1,19 @@
 // Start Up To Top
 let UPTOTOP = document.querySelector(".UP-TO-TOP");
 
-window.onscroll = function () {
-  this.scrollY >= 500
-    ? UPTOTOP.classList.add("show")
-    : UPTOTOP.classList.remove("show");
-};
-
-UPTOTOP.onclick = function () {
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth",
-  });
-};
+window.onscroll = function (){
+  if(scrollY>=400){
+    UPTOTOP.style.display = "block";
+  }else{
+    UPTOTOP.style.display = "none";
+  }
+  UPTOTOP.onclick = function (){
+    window.scroll({
+      top: 0,
+      behavior: "smooth"
+    })
+  }
+}
 // End Up To Top
 
 // Start language

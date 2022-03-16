@@ -32,6 +32,7 @@
 /* End language */
 body {
   background-color: rgba(0, 0, 0, 0.75);
+  user-select: none;
   /* font-family: "Poppins", sans-serif; */
 }
 
@@ -39,20 +40,13 @@ body {
 .UP-TO-TOP {
   position: fixed;
   bottom: 80px;
-  right: -50px;
-  background: none;
+  right: 50px;
+  background-color: #ffb620;
+  padding: 6px 15px;
+  font-size: 20px;
+  font-weight: 900;
   border: none;
   cursor: pointer;
-}
-.UP-TO-TOP img {
-  width: 50px;
-  height: 50px;
-}
-
-.show{
-  right: 20px;
-  transition: 0.6s;
-  z-index: 1000;
 }
 /* Start Up To Top */
 
