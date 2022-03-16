@@ -2,7 +2,7 @@
 let UPTOTOP = document.querySelector(".UP-TO-TOP");
 
 window.onscroll = function (){
-  if(scrollY>=400){
+  if(scrollY>=1100){
     UPTOTOP.style.display = "block";
   }else{
     UPTOTOP.style.display = "none";
