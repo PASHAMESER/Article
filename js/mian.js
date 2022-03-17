@@ -81,6 +81,6 @@ let date = document.getElementById("date");
 let date1 = new Date()
 let theYear = date1.getFullYear()
 date.innerHTML = theYear.innerHTML =
-'Made With &#x2764; By <span>Mohamed Roshdy</span>2021-' +theYear + ' &copy;';
+'Made With &#x2764; By <span>Mohamed Roshdy </span>2021-' +theYear + ' &copy;';
 
 // End date
