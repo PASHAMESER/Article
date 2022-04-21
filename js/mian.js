@@ -75,6 +75,48 @@ function myFunction() {
 }
 // End language
 
+
+
+/* Start chat */
+
+var imgBoxChat = document.getElementById("imgBoxChat");
+var fullchat = document.querySelector(".fullchat");
+imgBoxChat.onclick = function () {
+  // fullchat.classList.toggle("ssssss");
+  fullchat.style.display = "block";
+  imgBoxChat.style.display = "none";
+  textarea.focus();
+}
+
+var MiniMaze = document.getElementById("MiniMaze");
+MiniMaze.onclick = function () {
+  fullchat.style.display = "none";
+  imgBoxChat.style.display = "block";  
+}
+
+var imgSend = document.getElementById("img-send");
+var textarea = document.getElementById("textarea");
+var pLeft = document.getElementById("left");
+var pRight = document.getElementById("right");
+
+imgSend.onclick = function () {
+  if(textarea.value == "how are you" || textarea.value == "hey"){
+    pLeft.innerHTML = textarea.value;
+    pLeft.style.padding = "5px";
+    textarea.value = "";
+  }
+  setTimeout(function(){
+
+    pRight.innerHTML ="Hello, I hope you are fine and thank you for contacting us. Can I help you?";
+    pRight.style.padding = "5px";
+  },1000);
+
+}
+
+/* End chat */
+
+
+
 // Start date
 
 let date = document.getElementById("date");
