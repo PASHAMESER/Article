@@ -89,6 +89,148 @@ header a {
   width: 1140px;
 }
 
+
+/* Start chat */
+/* .ssssss {
+  display: none;
+} */
+.boxChat {
+  position: fixed !important;
+  right: 50px;
+  bottom: 150px;
+  z-index: 1000;
+}
+
+.boxChat img {
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+}
+
+.boxChat .chat {
+  position: relative;
+  height: 60px;
+  width: 300px;
+  background-image: linear-gradient(to right, #ffb620, rgba(255, 0, 0, 0.548));
+  border-radius: 5px 5px 0px 0px;
+  display: flex;
+  align-items: center;
+}
+
+.boxChat .fullchat {
+  display: none;
+}
+
+.boxChat .fullchat .chat #MiniMaze {
+  position: relative;
+  bottom: 20px;
+  left: 100px;
+  color: white;
+  cursor: pointer;
+}
+
+.boxChat .chat .headerchat {
+  display: flex;
+  gap: 100px;
+  align-items: center;
+  padding: 0px 15px;
+}
+
+.boxChat .chat .headerchat h2 {
+  color: white;
+  font-weight: 100;
+}
+
+.boxChat .chat .headerchat img {
+  width: 55px;
+  height: 55px;
+  transition: 0.3s;
+}
+
+.boxChat .chat .headerchat img:hover {
+  transform: rotate(25deg);
+}
+
+.boxChat .messagepage {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  background-color: white;
+  overflow-y: hidden;
+}
+
+.boxChat .messagepage .divP {
+  display: block;
+  max-height: 300px;
+  overflow-y: scroll;
+}
+
+.boxChat .messagepage #left {
+  /* padding: 5px; */
+  margin: 10px 0px 0px 10px;
+  max-width: 150px;
+  background-color: #3f51b5;
+  color: white;
+  border-radius: 10px 10px 10px 0px;
+}
+
+.boxChat .messagepage #right {
+  position: relative;
+  text-align: right;
+  left: 120px;
+  margin: 10px 0px 0px 10px;
+  max-width: 150px;
+  background-color: #ffb620;
+  color: white;
+  border-radius: 10px 10px 10px 0px;
+  /* overflow: auto; */
+}
+
+.boxChat .messagepage .boxmessage {
+  position: absolute;
+  bottom: 0;
+  height: 60px;
+  display: flex;
+  gap: 10px;
+}
+
+.boxChat .messagepage .boxmessage img {
+  height: 50px;
+  width: 50px;
+  position: relative;
+  left: 3px;
+  transition: 0.3s;
+}
+
+.boxChat .messagepage .boxmessage img:hover {
+  transform: rotate(-15deg);
+}
+
+.boxChat .messagepage .boxmessage #textarea {
+  outline: none;
+  /* text-align: right; */
+  resize: none;
+  height: 50px;
+  border-radius: 50px;
+  border: solid 1px #ddd;
+  width: 70%;
+  z-index: 100;
+  padding: 0 5px;
+}
+
+.boxChat .messagepage .boxmessage #textarea::placeholder {
+  position: absolute;
+  top: 16px;
+  padding: 0px 0px 0px 10px;
+  color: rgb(156, 156, 156);
+  font-weight: 100;
+  font-size: 12px;
+}
+
+/* End chat */
+
+
+
 /* Start Box */
 .box {
   display: flex;
