@@ -73,7 +73,6 @@ function myFunction() {
     title1.innerHTML = "نصائح هامة";
   }
 }
-// End language
 
 
 
@@ -86,13 +85,13 @@ imgBoxChat.onclick = function () {
   fullchat.style.display = "block";
   imgBoxChat.style.display = "none";
   textarea.focus();
-}
+};
 
 var MiniMaze = document.getElementById("MiniMaze");
 MiniMaze.onclick = function () {
   fullchat.style.display = "none";
-  imgBoxChat.style.display = "block";  
-}
+  imgBoxChat.style.display = "block";
+};
 
 var imgSend = document.getElementById("img-send");
 var textarea = document.getElementById("textarea");
@@ -100,21 +99,36 @@ var pLeft = document.getElementById("left");
 var pRight = document.getElementById("right");
 
 imgSend.onclick = function () {
-  if(textarea.value == "how are you" || textarea.value == "hey"){
-    pLeft.innerHTML = textarea.value;
+  if (textarea.value == "how are you" || textarea.value == "hey") {
+    let textM = document.createTextNode(textarea.value);
+    pLeft.appendChild(textM);
+
+    // pLeft.innerHTML += textM;
     pLeft.style.padding = "5px";
     textarea.value = "";
+
+    setTimeout(function () {
+      pRight.innerHTML =
+        "Hello, I hope you are fine and thank you for contacting us. Can I help you?";
+      pRight.style.padding = "5px";
+    }, 1000);
+  } else {
+    pLeft.innerHTML += textarea.value;
+    pLeft.style.padding = "5px";
+    textarea.value = "";
+    if(textarea.value ==""){
+      pLeft.style.padding = "0";
+    }
   }
-  setTimeout(function(){
 
-    pRight.innerHTML ="Hello, I hope you are fine and thank you for contacting us. Can I help you?";
-    pRight.style.padding = "5px";
-  },1000);
-
-}
+  if (textarea.value == "") {
+    textarea.value = "";
+    pRight.innerHTML = "";
+    pRight.style.padding = "0";
+  }
+};
 
 /* End chat */
-
 
 
 // Start date
