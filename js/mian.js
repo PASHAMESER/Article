@@ -100,21 +100,26 @@ var pLeft = document.getElementById("left");
 var pRight = document.getElementById("right");
 
 imgSend.onclick = function () {
-  if(textarea.value == "how are you" || textarea.value == "hey"){
+  if(textarea.value === ""){
+    pLeft.value = ""
+    pRight.value = ""
+  }
+
+  if (textarea.value === "hey") {
     pLeft.innerHTML = textarea.value;
     pLeft.style.padding = "5px";
+    setTimeout(function(){
+      pRight.innerHTML ="Hello, I hope you are fine and thank you for contacting us. Can I help you?";
+      pRight.style.padding = "5px";
+    },2000);
     textarea.value = "";
-  }
-  setTimeout(function(){
-
-    pRight.innerHTML ="Hello, I hope you are fine and thank you for contacting us. Can I help you?";
-    pRight.style.padding = "5px";
-  },1000);
+  };
+  
 
 }
 
-/* End chat */
 
+/* End chat */
 
 
 // Start date

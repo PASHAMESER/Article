@@ -48,6 +48,7 @@ body {
   border: none;
   cursor: pointer;
 }
+
 /* Start Up To Top */
 
 header {
@@ -208,14 +209,11 @@ header a {
 
 .boxChat .messagepage .boxmessage #textarea {
   outline: none;
-  /* text-align: right; */
   resize: none;
   height: 50px;
   border-radius: 50px;
   border: solid 1px #ddd;
-  width: 70%;
-  z-index: 100;
-  padding: 0 5px;
+  padding: 10px 23px;
 }
 
 .boxChat .messagepage .boxmessage #textarea::placeholder {
@@ -278,10 +276,12 @@ header a {
   0%, 100% {
     top: 0;
   }
+
   50% {
     top: 50px;
   }
 }
+
 /* End Animation */
 
 
@@ -316,6 +316,7 @@ header a {
   direction: rtl;
 }
 
+
 .box .section1 .btn11 {
   position: relative;
   z-index: 1000;
@@ -324,7 +325,6 @@ header a {
 
 .box .section1 .btn, .btn1 {
   font-size: 18px;
-
   border: none;
   padding: 11px 10px;
   transition: 0.3s ease-in-out;
@@ -367,7 +367,8 @@ header a {
   .box .section {
     width: 300px;
   }
-  .box .section1 {    
+
+  .box .section1 {
     width: 300px;
   }
 
@@ -397,6 +398,7 @@ header a {
   .box .section {
     width: 400px;
   }
+
   .box .section1 {
     width: 400px;
   }
@@ -424,6 +426,7 @@ header a {
   .box .section {
     width: 460px;
   }
+
   .box .section1 {
     width: 460px;
   }
@@ -495,7 +498,8 @@ header a {
   line-height: 1.7;
   font-weight: bold;
 }
-.box1 .section3 a{
+
+.box1 .section3 a {
   color: #ffb620;
   padding: 7px 10px;
   background-color: rgba(250, 250, 250, 0.1);
@@ -511,16 +515,19 @@ header a {
   .box1 .content .section2 {
     width: 275px;
   }
+
   .box1 .content .section3 {
     width: 275px;
   }
 }
+
 /*sm1*/
 @media (min-width:400px) and (max-width:550px) {
 
   .box1 .content .section2 {
     width: 380px;
   }
+
   .box1 .content .section3 {
     width: 380px;
   }
@@ -565,6 +572,7 @@ footer span {
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
 }
+
 footer span span {
   color: #ffb620;
 }
