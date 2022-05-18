@@ -36,6 +36,10 @@ body {
   /* font-family: "Poppins", sans-serif; */
 }
 
+.msgPage {
+  width: 600px;
+}
+
 /* Start Up To Top */
 .UP-TO-TOP {
   position: fixed;
