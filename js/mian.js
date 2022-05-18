@@ -1,3 +1,4 @@
+swal.fire({title: "رسالة هامة جدا", text: "الموقع تحت التطوير " , timer: "4000" , className:"msgPage", imageUrl:"../img/240573981_2728310637461655_526059359962308206_n.jpg" , imageWidth: "20%"})
 // Start Up To Top
 let UPTOTOP = document.querySelector(".UP-TO-TOP");
 
