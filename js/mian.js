@@ -73,7 +73,6 @@ function myFunction() {
     title1.innerHTML = "نصائح هامة";
   }
 }
-// End language
 
 
 
@@ -86,13 +85,13 @@ imgBoxChat.onclick = function () {
   fullchat.style.display = "block";
   imgBoxChat.style.display = "none";
   textarea.focus();
-}
+};
 
 var MiniMaze = document.getElementById("MiniMaze");
 MiniMaze.onclick = function () {
   fullchat.style.display = "none";
-  imgBoxChat.style.display = "block";  
-}
+  imgBoxChat.style.display = "block";
+};
 
 var imgSend = document.getElementById("img-send");
 var textarea = document.getElementById("textarea");
@@ -100,6 +99,7 @@ var pLeft = document.getElementById("left");
 var pRight = document.getElementById("right");
 
 imgSend.onclick = function () {
+<<<<<<< HEAD
   if(textarea.value === ""){
     pLeft.value = ""
     pRight.value = ""
@@ -107,20 +107,50 @@ imgSend.onclick = function () {
 
   if (textarea.value === "hey") {
     pLeft.innerHTML = textarea.value;
+=======
+  if (textarea.value == "how are you" || textarea.value == "hey") {
+    let textM = document.createTextNode(textarea.value);
+    pLeft.appendChild(textM);
+
+    // pLeft.innerHTML += textM;
+>>>>>>> d83bf34fc0a75082f70a6b8234d0f05292cc398e
     pLeft.style.padding = "5px";
     setTimeout(function(){
       pRight.innerHTML ="Hello, I hope you are fine and thank you for contacting us. Can I help you?";
       pRight.style.padding = "5px";
     },2000);
     textarea.value = "";
+<<<<<<< HEAD
   };
   
 
 }
+=======
+
+    setTimeout(function () {
+      pRight.innerHTML =
+        "Hello, I hope you are fine and thank you for contacting us. Can I help you?";
+      pRight.style.padding = "5px";
+    }, 1000);
+  } else {
+    pLeft.innerHTML += textarea.value;
+    pLeft.style.padding = "5px";
+    textarea.value = "";
+    if(textarea.value ==""){
+      pLeft.style.padding = "0";
+    }
+  }
+
+  if (textarea.value == "") {
+    textarea.value = "";
+    pRight.innerHTML = "";
+    pRight.style.padding = "0";
+  }
+};
+>>>>>>> d83bf34fc0a75082f70a6b8234d0f05292cc398e
 
 
 /* End chat */
-
 
 // Start date
 
