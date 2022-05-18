@@ -1,4 +1,7 @@
-swal.fire({title: "رسالة هامة جدا", text: "الموقع تحت التطوير " , timer: "4000" , className:"msgPage", imageUrl:"../img/240573981_2728310637461655_526059359962308206_n.jpg" , imageWidth: "20%"})
+setTimeout(function(){
+  swal.fire({title: "رسالة هامة جدا", text: "الموقع تحت التطوير " , timer: "4000" , className:"msgPage", imageUrl:"../img/240573981_2728310637461655_526059359962308206_n.jpg" , imageWidth: "20%"})
+
+},2000)
 // Start Up To Top
 let UPTOTOP = document.querySelector(".UP-TO-TOP");
 
@@ -26,7 +29,6 @@ document.getElementById("body").style.fontFamily = "BoutrosMBC";
 document.getElementById("p").innerHTML =
   " مرحبآ بك في موقع مقالات برمجية باللغة العربية";
 document.title = "نصحية مبرمج";
-document.getElementById("h1").innerHTML = "موقع نصيحة <span>مبرمج</span> عربى";
 document.getElementById("sora").src =
   "./img/240573981_2728310637461655_526059359962308206_n.jpg";
 document.getElementById("btn").innerHTML = "صفحة مبرمج الموقع";
@@ -37,6 +39,19 @@ document.getElementById("section3H1").innerHTML =
 document.getElementById("section3P");
 document.getElementById("title1").innerHTML = "نصائح هامة";
 
+
+let i = 0;
+var text = "موقع نصيحة مبرمج عربى";
+function typing() {
+if (i < text.length) {
+    document.getElementById("h1").innerHTML += text.charAt(i);
+    i++;
+    setTimeout(typing, 60);
+}
+}
+typing();
+
+clearTimeout(forText)
 function myFunction() {
   body.classList.toggle("rtl-lft");
 
@@ -59,7 +74,6 @@ function myFunction() {
   } else {
     logo.innerHTML = "نصيحة مبرمج";
     p.innerHTML = " مرحبآ بك في موقع مقالات برمجية باللغة العربية";
-    h1.innerHTML = "موقع نصيحة <span>مبرمج</span> عربى";
     sora.src = "./img/240573981_2728310637461655_526059359962308206_n.jpg";
     document.title = "نصحية مبرمج";
     body.style.fontFamily = "BoutrosMBC";
