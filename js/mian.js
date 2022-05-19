@@ -51,7 +51,6 @@ if (i < text.length) {
 }
 typing();
 
-clearTimeout(forText)
 function myFunction() {
   body.classList.toggle("rtl-lft");
 
