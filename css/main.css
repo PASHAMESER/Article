@@ -367,6 +367,12 @@ header a {
   .container {
     width: 300px;
   }
+    .boxChat {
+      position: fixed !important;
+      right: 30px;
+      bottom: 10px;
+      z-index: 1000;
+  }
 
   .box .section {
     width: 300px;
